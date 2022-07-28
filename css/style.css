@@ -39,19 +39,23 @@ html {
     background-color: var(--bg-color-basic);
 }
 
+h1 {
+    margin: 0;
+}
+
 a {
     display: block;
     text-decoration: none;
-}
-
-h1 {
-    margin: 0;
+    text-align: center;
+    color: var(--bg-color-basic);
+    line-height: 35px;
 }
 
 li {
     list-style-type: none;
 }
-.container{
+
+.container {
     max-width: 1150px;
     margin: 0 auto;
     padding: 0 20px;
@@ -59,6 +63,9 @@ li {
 
 .container--nav {  
     padding: 17px 20px 16px;  
+}
+
+.header-nav__list {
     display: flex;
     gap: 31px;
     justify-content: center;
@@ -99,7 +106,9 @@ li {
     height: 80px;
     display: flex;
 }
-
+.ab {
+    display: flex;
+}
 .header-information__title {
     font-weight: var(--font-weight-title);
     font-size: 36px;
@@ -112,13 +121,21 @@ li {
 .header-information__connection {
     border: 2px solid var(--bg-color-btn);
     border-radius: 20px;
-    max-width: 170px;
-    padding: 10px 24px;
+    width: 170px; 
+    height: 40px;
 }
 
 .header-information__telephone {
     font-size: 16px;
     line-height: var(--line-height-telephone);
+}
+
+.header-information__contact a {
+    color: var(--color-main);
+}
+
+.header-information__logo a {
+    color: var(--bg-color-btn);
 }
 
 .header-information__contact {
@@ -135,11 +152,14 @@ li {
 }
 
 .main-menu {
+    padding: 30px 0;
+}
+
+.main-menu__list {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
-    padding: 30px 0;
 }
 
 .main-stock {
@@ -163,7 +183,7 @@ li {
     justify-content: center;
     align-content: center;
     height: 604px;
-    background-image: url(../image/Rectangle\ 2.svg);
+    background-image: url(../image/Rectangle2.svg);
     background-position: center;
 }
 
@@ -171,8 +191,7 @@ li {
     font-weight: var(--font-weight-title);
     font-size: 48px;
     line-height: 56px;
-    margin-bottom: 40px;
-    
+    margin-bottom: 40px; 
 }
 
 .main-stock__description {
@@ -182,7 +201,6 @@ li {
 .main-stock__btn {
     border-radius: 20px;
     border: 2px solid var(--bg-color-basic);
-    padding: 9px;
     margin-top: 44px;
     max-width: 170px;
     line-height: 16px;
@@ -194,4 +212,133 @@ li {
     max-width: 308px;
     padding: 0;
     margin: 192px 0;
+}
+
+.main-special {
+    background-color: var(--bg-color-second);
+}
+
+.main-special__title {
+    font-weight: var(--font-weight-title);
+    font-size: var(--font-size-h2);
+    padding-top: 80px;
+}
+
+.main-spacial__goods {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.main-special__item {
+    max-width: 255px;
+    background-color: var(--bg-color-basic);
+    padding: 25px 30px;
+    text-align: center;
+}
+
+.main-special_image {
+    text-align: center;
+    
+}
+
+.main-special__description {
+    line-height: 20px;
+    color: var(--color-nav);
+    margin-top: 13px;
+}
+
+.main-special__price {
+    line-height: var(--line-height-telephone);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    font-size: var(--font-size-price);
+    margin-top: 14px;
+}
+
+.main-special__btn {
+    max-width: 130px;
+    border-radius: 20px;
+    background-color: var(--bg-color-btn);
+    color: var(--bg-color-basic);
+    margin: 15px auto 0;
+    height: 35px;
+}
+
+.container-shops {
+    padding: 36px 45px 31px 40px;
+    background-color: var(--bg-color-btn);
+    width: 540px;
+    display: flex;
+    gap: 65px;
+    align-items: center;
+}
+
+.main-shops {
+    padding-top: 100px;
+    background-color: var(--bg-color-second);
+    
+}
+.container--shops {
+    display: flex;
+    gap: 30px;
+    
+}
+input {
+    border-radius: 20px;
+    border: none;
+    padding: 0 41px 0 25px;
+    line-height: 35px;
+}
+
+.main-shops__articles {
+    width: 250px;
+    color: var(--bg-color-basic)
+}
+
+.main-shops__title {
+    font-weight: var(--font-weight-title);
+    font-size: var(--font-size-title);
+    line-height: 21px;
+}
+ .main-shops__description {
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+ }
+
+ .main-shops__link {
+    width: 170px;
+    border: 2px solid var(--bg-color-basic);
+    border-radius: 20px;
+ }
+
+ .main-brands__image {
+    width: 25%;
+    height: calc(357px / 3);
+    background-color: var(--bg-color-basic);
+    border: 1px solid var(--bg-color-second);
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+ }
+
+ .container--brands {
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .main-brands {
+    padding-top: 104px;
+    background-color: var(--bg-color-second);
+    margin-bottom: -2px;
+ }
+
+.special--goods {
+    padding-bottom: 80px;
+}
+
+.main-brands__link {
+    padding: 35px 67px;
 }
