@@ -106,7 +106,7 @@ li {
     height: 80px;
     display: flex;
 }
-.ab {
+.header-information__link {
     display: flex;
 }
 .header-information__title {
@@ -209,7 +209,7 @@ li {
 }
 
 .container--title {
-    max-width: 308px;
+    max-width: 340px;
     padding: 0;
     margin: 192px 0;
 }
@@ -336,9 +336,100 @@ input {
  }
 
 .special--goods {
-    padding-bottom: 80px;
+    padding-bottom: 78px;
 }
 
 .main-brands__link {
     padding: 35px 67px;
+}
+
+.footer-popular__link a {
+    color: var(--color-footer);
+    text-align: left;
+    line-height: 28px;
+}
+
+.footer-popular__article {
+    max-width: 255px;
+}
+
+.footer-popular__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140.62%;
+    padding-bottom: 21px;
+}
+
+.footer-popular__link {
+    font-size: var(--font-size-footer);
+    line-height: var(--line-hight-footer);
+    color: var(--color-footer);
+}
+
+.container--popular {
+    padding-top: 61px;
+    padding-bottom: 22px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-popular__list {
+    padding: 26px 0;
+    border-top: 1px solid var(--bg-color-second);
+}
+
+.container--social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 38px auto 38px auto;
+    align-items: flex-end;
+}
+
+.footer-social__item {
+    width: 45px;
+    height: 45px;
+}
+
+.footer-social__image {
+    position: relative;
+}
+
+.footer-social__child {
+    position: relative;
+    bottom: 33px;
+}
+
+.footer-social__logo {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.footer-social {
+    border-top: 1px solid var(--bg-color-second);
+}
+
+.footer-social__item a {
+    line-height: 0;
+}
+
+.footer-social__vk {
+    position: relative;
+    bottom: 30px;
+}
+
+.container--politics {
+    height: 64px;
+    font-size: var(--font-size-footer);
+    line-height: 14px;
+    color: var(--color-footer);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-politics {
+    background-color: var(--bg-color-second)
 }
